@@ -4,12 +4,48 @@ color: #434455;
 background-color: #FFF;
 }
 
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+
 a {
 text-decoration: none;
+color: inherit;
 }
 
-ul, ol {
-list-style: none;
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+width: 1158px;
+padding: 0 15px;
+margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -20,10 +56,16 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #4d5ae5;
+margin-right: 76px;
 }
 
 .logo-part {
 color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-link {
@@ -33,6 +75,8 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 color: #2e2f42;
+padding: 24px 0;
+display: block;
 }
 
 .nav-link:hover,
@@ -42,7 +86,14 @@ color: #2e2f42;
 
 .address {
 font-style: normal;
+margin-left: auto;
 }
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 
 .address-link {
 font-size: 16px;
@@ -60,6 +111,11 @@ color: #404bbf;
     background-color: #2e2f42;
 }
 
+.container-title {
+    width: 1440px;
+    height: 604px;
+}
+
 .title-header {
 font-family: "Roboto", sans-serif;
 font-weight: 700;
@@ -68,6 +124,7 @@ line-height: 1.07;
 letter-spacing: 0.02em;
 color: #ffffff;
 text-align: center;
+margin: 0 auto;
 }
 
 .title-button {
@@ -77,6 +134,8 @@ text-align: center;
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
    
 .title-button:hover,
@@ -168,7 +227,13 @@ color: #434455;
 }
 
 .section-footer{
-    background-color: #2e2f42; 
+    background-color: #2e2f42;
+    color: #f4f4fd; 
+    padding: 100px 0;
+}
+
+.container-footer {
+   align-items: flex-start;
 }
 
 
@@ -180,6 +245,8 @@ color: #434455;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .web-title {
@@ -193,5 +260,7 @@ color: #434455;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-transform: uppercase;
     color: #F4F4FD;
+    max-width: 264px;
 }
