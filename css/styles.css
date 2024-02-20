@@ -28,6 +28,8 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 0;
 }
 
+/* =========== Header styles =========== */
+
 .container {
 width: 1158px;
 padding: 0 15px;
@@ -107,89 +109,150 @@ color: #434455;
 color: #404bbf;
 }
 
-.title {
-    background-color: #2e2f42;
+/* =========== Hero Section styles =========== */
+
+
+.main-title { 
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
 }
 
-.container-title {
-    width: 1440px;
-    height: 604px;
+.hero {
+    background: #2e2f42;
+    padding: 188px 0;
 }
 
-.title-header {
-font-family: "Roboto", sans-serif;
-font-weight: 700;
-font-size: 56px;
-line-height: 1.07;
-letter-spacing: 0.02em;
-color: #ffffff;
-text-align: center;
-margin: 0 auto;
-}
-
-.title-button {
-    background-color: #4D5AE5;
+.btn-service-block {
+    background: #4d5ae5;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
     display: block;
     margin: 0 auto;
-}
-   
-.title-button:hover,
-.title-button:focus {
-    background-color: #404BBF;
+    padding: 16px 32px;
+    gap: 10px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px; 
+    display: block;
+    align-items: center;
+    cursor: pointer;
 }
 
-.advantages-title {
-    font-family: "Roboto", sans-serif;
+.btn-service:hover,
+.btn-service:focus {
+    color: #fff;
+    background: #404bbf;
+}
+
+/* =========== Benefits Section styles =========== */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits {
+    padding: 120px 0;
+}
+
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+.benefits-list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    text-align: center;
-    text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
-.advantages-text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+.benefits-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+/* =========== Team Section styles =========== */
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team {
-background-color: #f4f4fd;
+    background-color: #F4F4FD; 
+    padding: 120px 0;
 }
 
-.section-team {
-    font-size:36px;
-    line-height:1.11;
-    letter-spacing:0.02em;
-    text-transform:capitalize;
-    text-align:center;
-    color: #2e2f42;
+.team-item-name {
+    padding: 32px 0;
 }
 
 .team-list-item {
-    background-color: #ffffff;
+    background-color: #FFFFFF; 
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+            0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+            0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    width: calc((100% - 72px) / 4);
 }
 
-.team-name {
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.team-list-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
-.team-profession {
+.team-list-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -197,47 +260,79 @@ background-color: #f4f4fd;
     color: #434455;
 }
 
-.advance {
-font-family:"Roboto", sans-serif;
-font-weight:700;
-font-size:36px;
-line-height:1.11;
-letter-spacing:0.02em;
-text-transform:capitalize;
-text-align: center;
-color: #2e2f42;
+
+/* =========== Portfolio styles =========== */
+
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    text-align: left;
+    row-gap: 48px;
 }
 
-.advance-name {
- font-family: "Roboto", sans-serif;
-font-weight: 500;
-font-size: 20px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #2e2f42;
+
+.portfolio-list-item {
+    border: 1px solid #e7e9fc;
+    width: 360px;
 }
 
-.advance-description {
- font-family: "Roboto", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.02em;
-color: #434455;
+.section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.section-footer{
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.portfolio-item-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.portfolio-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.portfolio-title-text {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
+/* =========== /Footer styles =========== */
+
+.page-footer {
     background-color: #2e2f42;
-    color: #f4f4fd; 
     padding: 100px 0;
 }
 
-.container-footer {
-   align-items: flex-start;
+.page-footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background: #2e2f42;
+    max-width: 264px;
 }
 
-
-.studio-first {
+.logo-footer {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -245,22 +340,11 @@ color: #434455;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    max-width: 115px;
     display: inline-block;
     margin-bottom: 16px;
 }
 
-.web-title {
-    color: #f4f4fd; 
-    line-height: 1.17;
-}
-
-.text {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: #F4F4FD;
-    max-width: 264px;
+.logo-white-footer {
+    color: #f4f4fd;
 }
